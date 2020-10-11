@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="190c1fe4-f02e-4cc6-bfe8-747db48d98c0" name="Default Changelist" comment="" />
+    <list default="true" id="190c1fe4-f02e-4cc6-bfe8-747db48d98c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/JsonApi/JsonApiBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/blueprint.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/blueprint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -18,7 +47,10 @@
       </list>
     </option>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
@@ -144,7 +176,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/jbr/bin" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -152,13 +184,42 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.PaginateArticleTest.can_create">
+    <configuration name="ArticleController.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsonapi/Http/Controllers/Api/ArticleController.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="PaginateArticleTest.can_create" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\PaginateArticleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/PaginateArticleTest.php" method="can_create" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PaginateArticleTest.can_fecth_paginated_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\PaginateArticleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/PaginateArticleTest.php" method="can_fecth_paginated_articles" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SortArticlesTest.it_can_sort_articles_by_title_and_content" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\SortArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/SortArticlesTest.php" method="it_can_sort_articles_by_title_and_content" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SortArticlesTest.it_cannot_sort_articles_by_unknown_fields" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\SortArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/SortArticlesTest.php" method="it_cannot_sort_articles_by_unknown_fields" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.PaginateArticleTest.can_create" />
+        <item itemvalue="PHPUnit.PaginateArticleTest.can_fecth_paginated_articles" />
+        <item itemvalue="JavaScript Debug.ArticleController.php" />
+        <item itemvalue="PHPUnit.SortArticlesTest.it_cannot_sort_articles_by_unknown_fields" />
+        <item itemvalue="PHPUnit.SortArticlesTest.it_can_sort_articles_by_title_and_content" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -168,33 +229,89 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602084822928</updated>
-      <workItem from="1602084824084" duration="874000" />
+      <workItem from="1602084824084" duration="4135000" />
+      <workItem from="1602102781506" duration="202000" />
+      <workItem from="1602103007553" duration="139000" />
+      <workItem from="1602103168503" duration="11606000" />
+      <workItem from="1602167753925" duration="8114000" />
+      <workItem from="1602444844362" duration="6401000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="760" y="14" key="#CLI_Interpreters" timestamp="1602100401496">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="760" y="14" key="#CLI_Interpreters/0.0.1600.860@0.0.1600.860" timestamp="1602100401496" />
     <state x="610" y="309" key="#Composer" timestamp="1602084934179">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="610" y="309" key="#Composer/0.0.1600.860@0.0.1600.860" timestamp="1602084934179" />
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1602085099161">
+    <state x="902" y="2" key="#PHP" timestamp="1602100423316">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602085099161" />
-    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1602085099161">
+    <state x="902" y="2" key="#PHP/0.0.1600.860@0.0.1600.860" timestamp="1602100423316" />
+    <state x="760" y="14" key="#Test_Frameworks" timestamp="1602100448432">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1602085099161" />
-    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1602085099161">
+    <state x="760" y="14" key="#Test_Frameworks/0.0.1600.860@0.0.1600.860" timestamp="1602100448432" />
+    <state x="569" y="114" width="970" height="660" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1602115590114">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1602085099161" />
-    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1602085099161">
+    <state x="569" y="114" width="970" height="660" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1600.860@0.0.1600.860" timestamp="1602115590114" />
+    <state x="930" y="188" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602451326286">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1602085099161" />
+    <state x="930" y="188" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1602451326286" />
+    <state x="955" y="255" key="FileChooserDialogImpl" timestamp="1602100214595">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="955" y="255" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1602100214595" />
+    <state width="754" height="227" key="GridCell.Tab.0.bottom" timestamp="1602450078720">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="754" height="227" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602450078720" />
+    <state width="754" height="227" key="GridCell.Tab.0.center" timestamp="1602450078719">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="754" height="227" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1602450078719" />
+    <state width="754" height="227" key="GridCell.Tab.0.left" timestamp="1602450078719">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="754" height="227" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1602450078719" />
+    <state width="754" height="227" key="GridCell.Tab.0.right" timestamp="1602450078719">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="754" height="227" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1602450078719" />
+    <state x="878" y="140" key="NewPhpClassDialog" timestamp="1602450732349">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="878" y="140" key="NewPhpClassDialog/0.0.1600.860@0.0.1600.860" timestamp="1602450732349" />
+    <state x="280" y="92" width="998" height="708" key="SettingsEditor" timestamp="1602103325479">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="280" y="92" width="998" height="708" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1602103325479" />
+    <state x="873" y="53" width="585" height="697" key="find.popup" timestamp="1602100245315">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="873" y="53" width="585" height="697" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1602100245315" />
+    <state x="863" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1602451392632">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="863" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1602451392632" />
   </component>
 </project>

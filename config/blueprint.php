@@ -27,7 +27,7 @@ return [
     | your own custom namespace when generating these components.
     |
     */
-    'models_namespace' => '',
+    'models_namespace' => 'Models',
     'controllers_namespace' => 'Http\\Controllers',
 
 
@@ -70,7 +70,7 @@ return [
     | by defining your `foreign` key column with an `onDelete`.
     |
     */
-    'use_constraints' => false,
+    'use_constraints' => true,
 
     'on_delete' => 'cascade',
 
@@ -100,7 +100,7 @@ return [
     |
     */
 
-    'use_guarded' => false,
+    'use_guarded' => true,
 
     /*
     |--------------------------------------------------------------------------
