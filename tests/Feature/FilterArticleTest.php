@@ -110,26 +110,59 @@ class FilterArticleTest extends TestCase
     public function can_search_article_by_title_and_content()
     {
         Article::factory()->create([
-            'title'=> 'Article from Aprendible',
-            'created_at' => now()->month(2)
+            'title' => 'Article from Aprendible',
+            'content' => "content"
         ]);
 
         Article::factory()->create([
-            'title'=> 'Another Article from February',
-            'created_at' => now()->month(2)
+            'title' => 'Another Article from February',
+            'content' => 'content Aprendible...'
         ]);
 
         Article::factory()->create([
-            'title'=> 'Article from January',
-            'created_at' => now()->month(1)
+            'title' => 'Title 2',
+            'content' => 'content 2'
         ]);
 
-        $url = route('api.v1.articles.index', ['filter[month]' => '2']);
+        $url = route('api.v1.articles.index', ['filter[search]' => 'Aprendible']);
 
         $this->getJson($url)
             ->assertJsonCount(2, 'data')
-            ->assertSee('Article from February')
+            ->assertSee('Article from Aprendible')
             ->assertSee('Another Article from February')
-            ->assertDontSee('Article from January');
+            ->assertDontSee('Title 2');
+    }
+
+    /** @test */
+    public function can_search_article_by_title_and_content_with_multiple_terms()
+    {
+        Article::factory()->create([
+            'title' => 'Article from Aprendible',
+            'content' => "content"
+        ]);
+
+        Article::factory()->create([
+            'title' => 'Another Article from February',
+            'content' => 'content Aprendible...'
+        ]);
+
+        Article::factory()->create([
+            'title' => 'Another Laravel Article from February',
+            'content' => 'content...'
+        ]);
+
+        Article::factory()->create([
+            'title' => 'Title 2',
+            'content' => 'content 2'
+        ]);
+
+        $url = route('api.v1.articles.index', ['filter[search]' => 'Aprendible Laravel']);
+
+        $this->getJson($url)
+            ->assertJsonCount(3, 'data')
+            ->assertSee('Article from Aprendible')
+            ->assertSee('Another Article from February')
+            ->assertSee('Another Laravel Article from February')
+            ->assertDontSee('Title 2');
     }
 }

@@ -6,6 +6,7 @@ use App\Models\Traits\HasSorts;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Article extends Model
 {
@@ -62,5 +63,13 @@ class Article extends Model
     public function scopeMonth(Builder $query, $value)
     {
         $query->whereMonth('created_at', $value);
+    }
+
+    public function scopeSearch(Builder $query, $values)
+    {
+        foreach(Str::of($values)->explode(' ') as $value) {
+            $query->orWhere('title', 'LIKE', "%{$value}%")
+                ->orWhere('content', 'LIKE', "%{$value}%");
+        }
     }
 }
