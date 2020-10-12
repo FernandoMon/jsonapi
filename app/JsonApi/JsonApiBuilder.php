@@ -51,4 +51,17 @@ class JsonApiBuilder
             }
         };
     }
+
+    public function applyFilters(){
+        return function () {
+            foreach (request('filter', []) as $filter => $value) {
+                abort_unless(
+                    $this->hasNamedScope($filter),
+                    400, "The filter '{$filter}' is not allowed."
+                );
+                $this->{$filter}($value);
+            }
+            return $this;
+        };
+    }
 }
