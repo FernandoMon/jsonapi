@@ -3,9 +3,9 @@
 namespace App\Http\Resources;
 
 use http\Env\Request;
-use Illuminate\Http\Resources\Json\ResourceCollection;
+use Illuminate\Http\Resources\Json\ResourceCollection as BaseResourceCollectio;
 
-class ArticleCollection extends ResourceCollection
+class ResourceCollection extends BaseResourceCollectio
 {
     //public $collects = ArticleResource::class;
     /**
@@ -17,7 +17,7 @@ class ArticleCollection extends ResourceCollection
     public function toArray($request)
     {
         return [
-            'data' => ArticleResource::collection($this->collection)
+            'data' => ResourceObject::collection($this->collection)
         ];
     }
 }

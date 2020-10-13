@@ -20,9 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="190c1fe4-f02e-4cc6-bfe8-747db48d98c0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/jsonapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsonapi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/ArticleCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/ResourceCollection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/ArticleResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/ResourceObject.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/FilterArticleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/FilterArticleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/ListArticleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/ListArticleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/PaginateArticleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/PaginateArticleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/SortArticlesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/SortArticlesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/FilterArticleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/FilterArticleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +174,13 @@
       <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
       <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
       <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/vendor/cloudcreativity/laravel-json-api" />
+      <path value="$PROJECT_DIR$/vendor/nyholm/psr7" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message-factory" />
+      <path value="$PROJECT_DIR$/vendor/neomerx/json-api" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/cloudcreativity/json-api-testing" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iYW5YSFmn0WVcceugS9lIW7IGm" />
@@ -169,7 +191,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/jbr/bin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Feature/Articles" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -180,25 +202,30 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHPUnit.FilterArticleTest.can_search_article_by_title_and_content_with_multiple_terms">
-    <configuration name="FilterArticleTest.can_filter_articles_by_month" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FilterArticleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FilterArticleTest.php" method="can_filter_articles_by_month" scope="Method" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Archivos de usuario\Documentos\Desarrollo web\Escuela\jsonapi\tests\Feature\Articles" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.FilterArticleTest.can_filter_articles_by_title">
+    <configuration name="FilterArticleTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\FilterArticleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/FilterArticleTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="FilterArticleTest.can_filter_articles_by_year" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FilterArticleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FilterArticleTest.php" method="can_filter_articles_by_year" scope="Method" />
+    <configuration name="FilterArticleTest.can_filter_articles_by_title" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\FilterArticleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/FilterArticleTest.php" method="can_filter_articles_by_title" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="FilterArticleTest.can_search_article_by_title_and_content" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FilterArticleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FilterArticleTest.php" method="can_search_article_by_title_and_content" scope="Method" />
+    <configuration name="ListArticleTest.can_fetch_all_article" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\ListArticleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/ListArticleTest.php" method="can_fetch_all_article" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="FilterArticleTest.can_search_article_by_title_and_content_with_multiple_terms" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FilterArticleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FilterArticleTest.php" method="can_search_article_by_title_and_content_with_multiple_terms" scope="Method" />
+    <configuration name="ListArticleTest.can_fetch_single_article" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\ListArticleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/ListArticleTest.php" method="can_fetch_single_article" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="FilterArticleTest.cannot_filter_articles_by_unknown_filters" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FilterArticleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FilterArticleTest.php" method="cannot_filter_articles_by_unknown_filters" scope="Method" />
+    <configuration name="PaginateArticleTest.can_fecth_paginated_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\PaginateArticleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/PaginateArticleTest.php" method="can_fecth_paginated_articles" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -207,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.FilterArticleTest.can_search_article_by_title_and_content_with_multiple_terms" />
-        <item itemvalue="PHPUnit.FilterArticleTest.can_search_article_by_title_and_content" />
-        <item itemvalue="PHPUnit.FilterArticleTest.cannot_filter_articles_by_unknown_filters" />
-        <item itemvalue="PHPUnit.FilterArticleTest.can_filter_articles_by_month" />
-        <item itemvalue="PHPUnit.FilterArticleTest.can_filter_articles_by_year" />
+        <item itemvalue="PHPUnit.FilterArticleTest.can_filter_articles_by_title" />
+        <item itemvalue="PHPUnit.FilterArticleTest" />
+        <item itemvalue="PHPUnit.PaginateArticleTest.can_fecth_paginated_articles" />
+        <item itemvalue="PHPUnit.ListArticleTest.can_fetch_all_article" />
+        <item itemvalue="PHPUnit.ListArticleTest.can_fetch_single_article" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +255,9 @@
       <workItem from="1602103007553" duration="139000" />
       <workItem from="1602103168503" duration="11606000" />
       <workItem from="1602167753925" duration="8114000" />
-      <workItem from="1602444844362" duration="13832000" />
+      <workItem from="1602444844362" duration="16566000" />
+      <workItem from="1602507670637" duration="9469000" />
+      <workItem from="1602591867836" duration="738000" />
     </task>
     <servers />
   </component>
@@ -245,6 +274,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="760" y="14" key="#CLI_Interpreters" timestamp="1602100401496">
@@ -263,38 +293,42 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="760" y="14" key="#Test_Frameworks/0.0.1600.860@0.0.1600.860" timestamp="1602100448432" />
-    <state x="569" y="114" width="970" height="660" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1602115590114">
+    <state x="569" y="114" width="970" height="660" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1602520753034">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="569" y="114" width="970" height="660" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1600.860@0.0.1600.860" timestamp="1602115590114" />
+    <state x="569" y="114" width="970" height="660" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1600.860@0.0.1600.860" timestamp="1602520753034" />
+    <state x="888" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602480459314">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="888" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860@0.0.1600.860" timestamp="1602480459314" />
     <state x="930" y="188" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602477475645">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="930" y="188" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1602477475645" />
-    <state x="955" y="255" key="FileChooserDialogImpl" timestamp="1602100214595">
+    <state x="955" y="255" key="FileChooserDialogImpl" timestamp="1602521566409">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="955" y="255" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1602100214595" />
-    <state width="754" height="230" key="GridCell.Tab.0.bottom" timestamp="1602480216805">
+    <state x="955" y="255" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1602521566409" />
+    <state width="1557" height="233" key="GridCell.Tab.0.bottom" timestamp="1602528942385">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="230" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602480216805" />
-    <state width="754" height="230" key="GridCell.Tab.0.center" timestamp="1602480216805">
+    <state width="1557" height="233" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602528942385" />
+    <state width="1557" height="233" key="GridCell.Tab.0.center" timestamp="1602528942385">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="230" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1602480216805" />
-    <state width="754" height="230" key="GridCell.Tab.0.left" timestamp="1602480216805">
+    <state width="1557" height="233" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1602528942385" />
+    <state width="1557" height="233" key="GridCell.Tab.0.left" timestamp="1602528942385">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="230" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1602480216805" />
-    <state width="754" height="230" key="GridCell.Tab.0.right" timestamp="1602480216805">
+    <state width="1557" height="233" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1602528942385" />
+    <state width="1557" height="233" key="GridCell.Tab.0.right" timestamp="1602528942385">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="230" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1602480216805" />
-    <state x="878" y="140" key="NewPhpClassDialog" timestamp="1602450732349">
+    <state width="1557" height="233" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1602528942385" />
+    <state x="878" y="140" key="NewPhpClassDialog" timestamp="1602508612828">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="878" y="140" key="NewPhpClassDialog/0.0.1600.860@0.0.1600.860" timestamp="1602450732349" />
+    <state x="878" y="140" key="NewPhpClassDialog/0.0.1600.860@0.0.1600.860" timestamp="1602508612828" />
     <state x="280" y="92" width="998" height="708" key="SettingsEditor" timestamp="1602478013344">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -303,13 +337,13 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1600.860@0.0.1600.860" timestamp="1602455184058" />
-    <state x="873" y="53" width="585" height="697" key="find.popup" timestamp="1602100245315">
+    <state x="873" y="53" width="585" height="697" key="find.popup" timestamp="1602520375821">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="873" y="53" width="585" height="697" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1602100245315" />
-    <state x="863" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1602478116360">
+    <state x="873" y="53" width="585" height="697" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1602520375821" />
+    <state x="864" y="87" width="672" height="452" key="search.everywhere.popup" timestamp="1602520129227">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="863" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1602478116360" />
+    <state x="864" y="87" width="672" height="452" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1602520129227" />
   </component>
 </project>

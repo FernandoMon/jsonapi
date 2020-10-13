@@ -14,7 +14,9 @@ class Article extends Model
 
     //use HasSorts;
 
-    public $allowedSorts = ['title', 'content'];
+    public $type = 'article';
+
+    //public $allowedSorts = ['title', 'content'];
 
     /**
      * The attributes that aren't mass assignable.
@@ -34,6 +36,14 @@ class Article extends Model
         'user_id' => 'integer',
     ];
 
+    public function fields()
+    {
+        return [
+            'title' => $this->title,
+            'slug' => $this->slug,
+            'content' => $this->content,
+        ];
+    }
 
     public function category()
     {
