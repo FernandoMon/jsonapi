@@ -20,8 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="190c1fe4-f02e-4cc6-bfe8-747db48d98c0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/jsonapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsonapi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Validators.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Validators.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/PaginateArticleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/PaginateArticleTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,6 +177,13 @@
       <path value="$PROJECT_DIR$/vendor/neomerx/json-api" />
       <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
       <path value="$PROJECT_DIR$/vendor/cloudcreativity/json-api-testing" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/laravel/passport" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/league/event" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-server" />
+      <path value="$PROJECT_DIR$/vendor/defuse/php-encryption" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iYW5YSFmn0WVcceugS9lIW7IGm" />
@@ -191,25 +210,25 @@
       <recent name="D:\Archivos de usuario\Documentos\Desarrollo web\Escuela\jsonapi\tests\Feature\Articles" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.CreateArticlesTest.authenticated_user_can_create_articles">
-    <configuration name="CreateArticlesTest.authenticated_user_can_create_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\CreateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" method="authenticated_user_can_create_articles" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="CreateArticlesTest.content_is_required" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\CreateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" method="content_is_required" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="CreateArticlesTest.slug_is_required" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\CreateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" method="slug_is_required" scope="Method" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="PHPUnit.CreateArticlesTest.slug_must_not_contain_underscores">
     <configuration name="CreateArticlesTest.slug_is_unique" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\Articles\CreateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" method="slug_is_unique" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="CreateArticlesTest.title_is_required" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\CreateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" method="title_is_required" scope="Method" />
+    <configuration name="CreateArticlesTest.slug_must_not_contain_underscores" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\CreateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" method="slug_must_not_contain_underscores" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CreateArticlesTest.slug_must_not_end_with_dashes" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\CreateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" method="slug_must_not_end_with_dashes" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CreateArticlesTest.slug_must_not_start_with_dashes" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\CreateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" method="slug_must_not_start_with_dashes" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CreateArticlesTest.slug_must_only_contain_letters_numbers_and_dashes" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\CreateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" method="slug_must_only_contain_letters_numbers_and_dashes" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -218,11 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.CreateArticlesTest.authenticated_user_can_create_articles" />
+        <item itemvalue="PHPUnit.CreateArticlesTest.slug_must_not_contain_underscores" />
+        <item itemvalue="PHPUnit.CreateArticlesTest.slug_must_not_start_with_dashes" />
+        <item itemvalue="PHPUnit.CreateArticlesTest.slug_must_not_end_with_dashes" />
+        <item itemvalue="PHPUnit.CreateArticlesTest.slug_must_only_contain_letters_numbers_and_dashes" />
         <item itemvalue="PHPUnit.CreateArticlesTest.slug_is_unique" />
-        <item itemvalue="PHPUnit.CreateArticlesTest.slug_is_required" />
-        <item itemvalue="PHPUnit.CreateArticlesTest.content_is_required" />
-        <item itemvalue="PHPUnit.CreateArticlesTest.title_is_required" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +260,7 @@
       <workItem from="1602167753925" duration="8114000" />
       <workItem from="1602444844362" duration="16566000" />
       <workItem from="1602507670637" duration="9469000" />
-      <workItem from="1602591867836" duration="2325000" />
+      <workItem from="1602591867836" duration="8116000" />
     </task>
     <servers />
   </component>
@@ -289,26 +308,30 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="930" y="188" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1602477475645" />
+    <state x="1013" y="196" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1602600637745">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="1013" y="196" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1600.860@0.0.1600.860" timestamp="1602600637745" />
     <state x="955" y="255" key="FileChooserDialogImpl" timestamp="1602521566409">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="955" y="255" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1602521566409" />
-    <state width="754" height="232" key="GridCell.Tab.0.bottom" timestamp="1602594712194">
+    <state width="754" height="232" key="GridCell.Tab.0.bottom" timestamp="1602600654979">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="232" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602594712194" />
-    <state width="754" height="232" key="GridCell.Tab.0.center" timestamp="1602594712194">
+    <state width="754" height="232" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602600654979" />
+    <state width="754" height="232" key="GridCell.Tab.0.center" timestamp="1602600654978">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="232" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1602594712194" />
-    <state width="754" height="232" key="GridCell.Tab.0.left" timestamp="1602594712194">
+    <state width="754" height="232" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1602600654978" />
+    <state width="754" height="232" key="GridCell.Tab.0.left" timestamp="1602600654978">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="232" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1602594712194" />
-    <state width="754" height="232" key="GridCell.Tab.0.right" timestamp="1602594712194">
+    <state width="754" height="232" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1602600654978" />
+    <state width="754" height="232" key="GridCell.Tab.0.right" timestamp="1602600654978">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="232" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1602594712194" />
+    <state width="754" height="232" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1602600654978" />
     <state x="878" y="140" key="NewPhpClassDialog" timestamp="1602508612828">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -325,9 +348,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="873" y="53" width="585" height="697" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1602520375821" />
-    <state x="864" y="87" width="672" height="452" key="search.everywhere.popup" timestamp="1602593660735">
+    <state x="864" y="87" width="672" height="452" key="search.everywhere.popup" timestamp="1602600849820">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="864" y="87" width="672" height="452" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1602593660735" />
+    <state x="864" y="87" width="672" height="452" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1602600849820" />
   </component>
 </project>
