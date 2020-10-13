@@ -20,9 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="190c1fe4-f02e-4cc6-bfe8-747db48d98c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Models/Traits/HasUuid.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Authorizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Authorizer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Adapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Adapter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Schema.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Schema.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Validators.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Validators.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/json-api-v1.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/json-api-v1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_07_193245_create_articles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_07_193245_create_articles_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/FilterArticleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/FilterArticleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/ListArticleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/ListArticleTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,25 +211,25 @@
       <recent name="D:\Archivos de usuario\Documentos\Desarrollo web\Escuela\jsonapi\tests\Feature\Articles" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.DeleteArticlesTest.guest_users_cannot_delete_articles">
-    <configuration name="CreateArticlesTest.authenticated_user_can_create_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\CreateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" method="authenticated_user_can_create_articles" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.FilterArticleTest.can_filter_articles_by_month">
+    <configuration name="FilterArticleTest.can_filter_articles_by_month" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\FilterArticleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/FilterArticleTest.php" method="can_filter_articles_by_month" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="CreateArticlesTest.guest_user_cannot_create_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\CreateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" method="guest_user_cannot_create_articles" scope="Method" />
+    <configuration name="IncludeAuthorsTest.can_fetch_related_authors" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\IncludeAuthorsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/IncludeAuthorsTest.php" method="can_fetch_related_authors" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="DeleteArticlesTest.authenticated_users_can_delete_their_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\DeleteArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/DeleteArticlesTest.php" method="authenticated_users_can_delete_their_articles" scope="Method" />
+    <configuration name="IncludeAuthorsTest.can_include_authors" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\IncludeAuthorsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/IncludeAuthorsTest.php" method="can_include_authors" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="DeleteArticlesTest.authenticated_users_cannot_delete_others_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\DeleteArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/DeleteArticlesTest.php" method="authenticated_users_cannot_delete_others_articles" scope="Method" />
+    <configuration name="ListArticleTest.can_fetch_single_article" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\ListArticleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/ListArticleTest.php" method="can_fetch_single_article" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="DeleteArticlesTest.guest_users_cannot_delete_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\DeleteArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/DeleteArticlesTest.php" method="guest_users_cannot_delete_articles" scope="Method" />
+    <configuration name="ListAuthorsTest.can_fetch_single_authors" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Authors\ListAuthorsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Authors/ListAuthorsTest.php" method="can_fetch_single_authors" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -226,11 +238,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.DeleteArticlesTest.guest_users_cannot_delete_articles" />
-        <item itemvalue="PHPUnit.CreateArticlesTest.authenticated_user_can_create_articles" />
-        <item itemvalue="PHPUnit.CreateArticlesTest.guest_user_cannot_create_articles" />
-        <item itemvalue="PHPUnit.DeleteArticlesTest.authenticated_users_cannot_delete_others_articles" />
-        <item itemvalue="PHPUnit.DeleteArticlesTest.authenticated_users_can_delete_their_articles" />
+        <item itemvalue="PHPUnit.FilterArticleTest.can_filter_articles_by_month" />
+        <item itemvalue="PHPUnit.IncludeAuthorsTest.can_include_authors" />
+        <item itemvalue="PHPUnit.ListArticleTest.can_fetch_single_article" />
+        <item itemvalue="PHPUnit.IncludeAuthorsTest.can_fetch_related_authors" />
+        <item itemvalue="PHPUnit.ListAuthorsTest.can_fetch_single_authors" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +261,7 @@
       <workItem from="1602167753925" duration="8114000" />
       <workItem from="1602444844362" duration="16566000" />
       <workItem from="1602507670637" duration="9469000" />
-      <workItem from="1602591867836" duration="11579000" />
+      <workItem from="1602591867836" duration="18715000" />
     </task>
     <servers />
   </component>
@@ -289,14 +301,14 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="569" y="114" width="970" height="660" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1600.860@0.0.1600.860" timestamp="1602520753034" />
-    <state x="888" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602480459314">
+    <state x="888" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602611738010">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="888" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860@0.0.1600.860" timestamp="1602480459314" />
-    <state x="930" y="188" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602477475645">
+    <state x="888" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860@0.0.1600.860" timestamp="1602611738010" />
+    <state x="930" y="188" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602611380355">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="930" y="188" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1602477475645" />
+    <state x="930" y="188" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1602611380355" />
     <state x="1013" y="196" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1602600637745">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -305,26 +317,26 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="955" y="255" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1602521566409" />
-    <state width="754" height="232" key="GridCell.Tab.0.bottom" timestamp="1602607700131">
+    <state width="754" height="187" key="GridCell.Tab.0.bottom" timestamp="1602614646390">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="232" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602607700131" />
-    <state width="754" height="232" key="GridCell.Tab.0.center" timestamp="1602607700130">
+    <state width="754" height="187" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602614646390" />
+    <state width="754" height="187" key="GridCell.Tab.0.center" timestamp="1602614646390">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="232" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1602607700130" />
-    <state width="754" height="232" key="GridCell.Tab.0.left" timestamp="1602607700130">
+    <state width="754" height="187" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1602614646390" />
+    <state width="754" height="187" key="GridCell.Tab.0.left" timestamp="1602614646390">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="232" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1602607700130" />
-    <state width="754" height="232" key="GridCell.Tab.0.right" timestamp="1602607700130">
+    <state width="754" height="187" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1602614646390" />
+    <state width="754" height="187" key="GridCell.Tab.0.right" timestamp="1602614646390">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="232" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1602607700130" />
-    <state x="878" y="140" key="NewPhpClassDialog" timestamp="1602508612828">
+    <state width="754" height="187" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1602614646390" />
+    <state x="878" y="140" key="NewPhpClassDialog" timestamp="1602611374013">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="878" y="140" key="NewPhpClassDialog/0.0.1600.860@0.0.1600.860" timestamp="1602508612828" />
+    <state x="878" y="140" key="NewPhpClassDialog/0.0.1600.860@0.0.1600.860" timestamp="1602611374013" />
     <state x="280" y="92" width="998" height="708" key="SettingsEditor" timestamp="1602478013344">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -333,13 +345,13 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1600.860@0.0.1600.860" timestamp="1602455184058" />
-    <state x="873" y="53" width="585" height="697" key="find.popup" timestamp="1602520375821">
+    <state x="873" y="53" width="585" height="697" key="find.popup" timestamp="1602615338355">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="873" y="53" width="585" height="697" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1602520375821" />
-    <state x="864" y="87" width="672" height="452" key="search.everywhere.popup" timestamp="1602607531538">
+    <state x="873" y="53" width="585" height="697" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1602615338355" />
+    <state x="864" y="87" width="672" height="452" key="search.everywhere.popup" timestamp="1602615116288">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="864" y="87" width="672" height="452" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1602607531538" />
+    <state x="864" y="87" width="672" height="452" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1602615116288" />
   </component>
 </project>

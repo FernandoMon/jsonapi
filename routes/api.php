@@ -10,5 +10,8 @@ Route::get('articles', [\App\Http\Controllers\Api\ArticleController::class, 'ind
 JsonApi::register('v1')->routes(function ($api) {
     /*$api->resource('articles')->only('create', 'update', 'delete')->middleware('auth');
     $api->resource('articles')->except('create', 'update', 'delete');*/
-    $api->resource('articles');
+    $api->resource('articles')->relationships(function ($api) {
+        $api->hasOne('authors')->except('replace');
+    });
+    $api->resource('authors')->only('index', 'read');
 });

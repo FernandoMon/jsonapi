@@ -20,7 +20,7 @@ class ListArticleTest extends TestCase
 
         $response = $this->jsonApi()->get(route('api.v1.articles.read', $article));
 
-        $response->assertExactJson([
+        $response->assertJson([
             'data' => [
                 'type' => 'articles',
                 'id' => (string) $article->getRouteKey(),
@@ -36,6 +36,9 @@ class ListArticleTest extends TestCase
                 ]
             ]
         ]);
+
+        $this->assertNull($response->json('data.relationships.authors.data'),
+        "The key 'data.relationships.authors.data' must be null");
     }
 
     /** @test */
@@ -46,7 +49,7 @@ class ListArticleTest extends TestCase
 
         $response = $this->jsonApi()->get(route('api.v1.articles.index'));
 
-        $response->assertJsonFragment([
+        $response->assertJson([
             'data' => [
                 [
                     'type' => 'articles',
