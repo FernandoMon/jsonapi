@@ -8,6 +8,6 @@ use CloudCreativity\LaravelJsonApi\Facades\JsonApi;
 Route::get('articles', [\App\Http\Controllers\Api\ArticleController::class, 'index'])->name('api.v1.articles.index');*/
 
 JsonApi::register('v1')->routes(function ($api) {
-    $api->resource('articles')->only('create', 'update')->middleware('auth');
-    $api->resource('articles')->except('create', 'update');
+    $api->resource('articles')->only('create', 'update', 'delete')->middleware('auth');
+    $api->resource('articles')->except('create', 'update', 'delete');
 });

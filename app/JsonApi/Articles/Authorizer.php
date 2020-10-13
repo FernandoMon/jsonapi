@@ -85,9 +85,9 @@ class Authorizer extends AbstractAuthorizer
      * @throws AuthenticationException|AuthorizationException
      *      if the request is not authorized.
      */
-    public function delete($record, $request)
+    public function delete($article, $request)
     {
-        // TODO: Implement delete() method.
+        $this->authorize('update', $article);
     }
 
 }
