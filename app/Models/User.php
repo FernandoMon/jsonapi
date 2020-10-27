@@ -10,6 +10,9 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Str;
 use Laravel\Passport\HasApiTokens;
 
+/**
+ * @method where(string $string, $username)
+ */
 class User extends Authenticatable
 {
     use HasFactory, Notifiable, HasApiTokens, HasUuid;
@@ -34,6 +37,11 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    public function findForPassport($username)
+    {
+        return $this->where('email', $username)->first();
+    }
 
     /**
      * The attributes that should be cast to native types.

@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="190c1fe4-f02e-4cc6-bfe8-747db48d98c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/JsonApi/Categories/Validators.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Categories/Validators.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,9 +183,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Feature/Articles" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -191,7 +195,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -249,7 +253,14 @@
       <workItem from="1602167753925" duration="8114000" />
       <workItem from="1602444844362" duration="16566000" />
       <workItem from="1602507670637" duration="9469000" />
-      <workItem from="1602591867836" duration="23186000" />
+      <workItem from="1602591867836" duration="24350000" />
+      <workItem from="1602630272924" duration="1938000" />
+      <workItem from="1602688125351" duration="14000" />
+      <workItem from="1602703199737" duration="4233000" />
+      <workItem from="1602773839599" duration="2990000" />
+      <workItem from="1602860495212" duration="17000" />
+      <workItem from="1603212949757" duration="3149000" />
+      <workItem from="1603818759713" duration="1769000" />
     </task>
     <servers />
   </component>
@@ -301,34 +312,34 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="1013" y="196" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1600.860@0.0.1600.860" timestamp="1602600637745" />
-    <state x="955" y="255" key="FileChooserDialogImpl" timestamp="1602521566409">
+    <state x="955" y="255" key="FileChooserDialogImpl" timestamp="1602860510283">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="955" y="255" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1602521566409" />
-    <state width="754" height="283" key="GridCell.Tab.0.bottom" timestamp="1602620364474">
+    <state x="955" y="255" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1602860510283" />
+    <state width="754" height="283" key="GridCell.Tab.0.bottom" timestamp="1602620490289">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="283" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602620364474" />
-    <state width="754" height="283" key="GridCell.Tab.0.center" timestamp="1602620364474">
+    <state width="754" height="283" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602620490289" />
+    <state width="754" height="283" key="GridCell.Tab.0.center" timestamp="1602620490289">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="283" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1602620364474" />
-    <state width="754" height="283" key="GridCell.Tab.0.left" timestamp="1602620364474">
+    <state width="754" height="283" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1602620490289" />
+    <state width="754" height="283" key="GridCell.Tab.0.left" timestamp="1602620490289">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="283" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1602620364474" />
-    <state width="754" height="283" key="GridCell.Tab.0.right" timestamp="1602620364474">
+    <state width="754" height="283" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1602620490289" />
+    <state width="754" height="283" key="GridCell.Tab.0.right" timestamp="1602620490289">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="283" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1602620364474" />
+    <state width="754" height="283" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1602620490289" />
     <state x="878" y="140" key="NewPhpClassDialog" timestamp="1602611374013">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="878" y="140" key="NewPhpClassDialog/0.0.1600.860@0.0.1600.860" timestamp="1602611374013" />
-    <state x="280" y="92" width="998" height="708" key="SettingsEditor" timestamp="1602478013344">
+    <state x="280" y="92" width="998" height="708" key="SettingsEditor" timestamp="1602630446721">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="280" y="92" width="998" height="708" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1602478013344" />
+    <state x="280" y="92" width="998" height="708" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1602630446721" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1602455184058">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -337,9 +348,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="873" y="53" width="585" height="697" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1602615338355" />
-    <state x="864" y="87" width="672" height="452" key="search.everywhere.popup" timestamp="1602617522739">
+    <state x="864" y="87" width="672" height="452" key="search.everywhere.popup" timestamp="1603216776744">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="864" y="87" width="672" height="452" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1602617522739" />
+    <state x="864" y="87" width="672" height="452" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1603216776744" />
   </component>
 </project>
