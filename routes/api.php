@@ -12,7 +12,14 @@ JsonApi::register('v1')->routes(function ($api) {
     $api->resource('articles')->except('create', 'update', 'delete');*/
     $api->resource('articles')->relationships(function ($api) {
         $api->hasOne('authors')->except('replace');
+        $api->hasOne('categories')->except('replace');
     });
-    $api->resource('authors')->only('index', 'read');
-    $api->resource('categories')->only('index', 'read', 'create', 'update', 'delete');
+
+    $api->resource('authors')->only('index', 'read')->relationships(function ($api) {
+        $api->hasMany('articles')->except('replace', 'add', 'remove');
+    });
+
+    $api->resource('categories')->relationships(function ($api) {
+        $api->hasMany('articles')->except('replace', 'add', 'remove');
+    });
 });
